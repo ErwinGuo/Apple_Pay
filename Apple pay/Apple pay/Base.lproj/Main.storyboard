@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Jw-Md-qHa">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.88533689310969754" blue="0.030578755914191347" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="pay"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="177" y="133" width="46" height="30"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="97q-Sw-BDR">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.88533689309999997" blue="0.030578755910000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="B2e-LK-WNy"/>
+                                    <constraint firstAttribute="width" constant="46" id="Y7k-Vw-0Sg"/>
+                                </constraints>
+                                <state key="normal" title="pay"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="B2e-LK-WNy"/>
+                                        <exclude reference="Y7k-Vw-0Sg"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="B2e-LK-WNy"/>
+                                        <include reference="Y7k-Vw-0Sg"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="ApplePayAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Anf-CK-3K6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="97q-Sw-BDR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="113" id="163-dp-r3W"/>
+                            <constraint firstItem="97q-Sw-BDR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hqt-7w-Eol"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="4Jw-Md-qHa"/>
+                                <exclude reference="97q-Sw-BDR"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="163-dp-r3W"/>
+                                <exclude reference="hqt-7w-Eol"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="4Jw-Md-qHa"/>
+                                <include reference="97q-Sw-BDR"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="163-dp-r3W"/>
+                                <include reference="hqt-7w-Eol"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="252" y="277"/>
+        </scene>
+    </scenes>
+</document>
