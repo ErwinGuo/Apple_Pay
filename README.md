@@ -11,7 +11,7 @@ Applepay实现demo
 
 3.project -> target -> Capabilities -> Apple Pay 设为on
 
-4.导入框架 -> import<PassKit/PassKit.h>
+4.导入框架 ->  PassKit
 
 5.开始集成
 
