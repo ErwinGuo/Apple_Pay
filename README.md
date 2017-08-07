@@ -7,7 +7,7 @@ Applepay实现demo
 
 1.一个有效的苹果开发者账号
 
-2.从苹果开发者中心（https://developer.apple.com）创建APPID、创建对应的Applepay证书
+2.从苹果开发者中心(https://developer.apple.com) 创建APPID、创建对应的Applepay证书
 
 3.project -> target -> Capabilities -> Apple Pay 设为on
 
